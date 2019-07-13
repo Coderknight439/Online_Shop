@@ -37,6 +37,7 @@ INSTALLED_APPS = [
 	'django.contrib.staticfiles',
 	'Shop.apps.ShopConfig',
 	'Cart.apps.CartConfig',
+	'Orders.apps.OrdersConfig',
 ]
 
 MIDDLEWARE = [
@@ -62,6 +63,7 @@ TEMPLATES = [
 				'django.template.context_processors.request',
 				'django.contrib.auth.context_processors.auth',
 				'django.contrib.messages.context_processors.messages',
+				'Cart.context_processor.cart'
 			],
 		},
 	},
@@ -130,4 +132,3 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'mahadirony.rony@gmail.com'
 EMAIL_HOST_PASSWORD = 'mahadi439'
 EMAIL_USE_TLS = True
-EMAIL_USE_SSL = True
