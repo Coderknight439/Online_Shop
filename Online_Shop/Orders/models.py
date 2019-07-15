@@ -2,6 +2,7 @@ from django.db import models
 from Shop.models import Product
 # Create your models here.
 
+
 class Order(models.Model):
 	braintree_id = models.CharField(max_length=15, Blank=True)
 	first_name = models.CharField(max_length=50)
